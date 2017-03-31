@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Xcapade</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="app_prefs_label" translatable="false">capaug_prefs</string>
+    <string name="app_prefs_language" translatable="false">app_lang</string>
+    <string name="aws_s3_bucket" translatable="false">xcapade-v1</string>
+</resources>

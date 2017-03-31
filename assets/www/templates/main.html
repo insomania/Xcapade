@@ -1,0 +1,46 @@
+<ion-side-menus>
+	<ion-pane ion-side-menu-content>
+		<ion-nav-view name="main"></ion-nav-view>
+	</ion-pane>
+	<ion-side-menu side="left" class="left-side-menu">
+		<ion-content has-header="false" scroll="true">
+			<div class="profile-info" align="left">
+				<div>
+					<img class="photo" ng-src="{{user.Photo}}" alt="user photo" />
+				</div>
+				<div class="title">{{user.Name}}</div>
+				<div class="desc">
+					Spots found {{foundspots.length}}
+				</div>
+				<div class="coin-info">
+					<img src="images/coin_icon1.png">
+					<div class="value">{{user.Coins}}</div>
+					<br class="clear">
+				</div>
+			</div>
+
+			<ul class="list menu-link">
+				<li ng-click="onHome();">
+					<img src="images/home_icon.png">
+					<a href="javascript: void(0);">Home</a>
+				</li>
+				<li ng-click="onAddSpot();">
+					<img src="images/spot_icon.png">
+					<a href="javascript: void(0);">Add New Spot</a>
+				</li>
+				<li ng-click="onGetCoins();">
+					<img src="images/getcoin_icon.png">
+					<a href="javascript: void(0);">Get Coins</a>
+				</li>
+				<!-- <li ng-click="onHelp();">
+					<img src="images/help_icon.png">
+					<a href="javascript: void(0);">Help</a>
+				</li> -->
+				<li ng-click="logout();">
+					<img src="images/logout_icon.png">
+					<a href="javascript: void(0);">Log out</a>
+				</li>
+			</ul>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

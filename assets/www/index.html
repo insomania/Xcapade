@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+	<!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">-->
+	<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ https://mts1.googleapis.com/ 'unsafe-inline' 'unsafe-eval'"> -->
+	<title>Capade</title>
+
+	<link href="lib/ionic/css/ionic.min.css" rel="stylesheet" data-ng-if="filename">
+	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" data-ng-if="filename">
+	<link href="css/style.css" rel="stylesheet" data-ng-if="filename">
+	<link href="css/window.css" rel="stylesheet" data-ng-if="filename">
+	
+	<!-- google maps javascript -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&amp;sensor=true" data-ng-if="filename"></script>
+	<!--	for china	-->
+	<!--<script src="http://maps.google.cn/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>-->
+	
+
+	<!-- <link href="lib/photoswipe/photoswipe.css" rel="stylesheet">
+	<link href="lib/photoswipe/default-skin/default-skin.css" rel="stylesheet">
+
+	<script src="lib/photoswipe/photoswipe.js"></script>
+	<script src="lib/photoswipe/photoswipe-ui-default.min.js"></script> -->
+	<script src="lib/aws/aws-sdk-2.4.9.min.js"></script>
+
+	<script src="lib/ionic/js/ionic.bundle.js" data-ng-if="filename"></script>
+
+	<script src="lib/ionic-service-core/ionic-core.js" data-ng-if="filename"></script>
+	<script src="lib/ionic-service-deploy/ionic-deploy.js" data-ng-if="filename"></script>
+
+	<script src="lib/ng-cordova.js" data-ng-if="filename"></script>
+	<!--<script src="cordova.js"></script>-->
+	<script src="lib/angular/angular-local-storage.js" data-ng-if="filename"></script>
+	<!--<script src="lib/OpenFB/openfb.js"></script>-->
+	<!--<script src="js/openfb-angular.js"></script>-->
+	<script src="js/openfb.js" data-ng-if="filename"></script>
+	<script src="js/ngopenfb.js" data-ng-if="filename"></script>
+
+	<!--
+	<script src="lib/app.min.js"></script>
+	<script src="lib/partials.min.js"></script>
+	-->
+	<script src="js/app.js" data-ng-if="filename"></script>
+	<script src="js/controllers/controllers.js" data-ng-if="filename"></script>
+	<script src="js/controllers/mainCtrl.js" data-ng-if="filename"></script>
+	<script src="js/controllers/homeCtrl.js" data-ng-if="filename"></script>
+	<script src="js/controllers/singleSpotCtrl.js" data-ng-if="filename"></script>
+	<script src="js/controllers/adventureCtrl.js" data-ng-if="filename"></script>
+	<script src="js/controllers/coinShopCtrl.js" data-ng-if="filename"></script>
+	<script src="js/directives.js" data-ng-if="filename"></script>
+	<script src="js/filters.js" data-ng-if="filename"></script>
+	<script src="js/services.js" data-ng-if="filename"></script>
+	<script src="js/define.js" data-ng-if="filename"></script>
+
+	<!--script>
+	var _hmt = _hmt || [];
+	(function() {
+	var hm = document.createElement("script");
+	hm.src = "//hm.baidu.com/hm.js?4c6c1f2f2760578720cc3f4f0d21931e";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+	})();
+	</script-->
+
+	<script>
+
+	var bStart = true;
+	var bGPSAlert = false;
+
+	var bBrowser = true;
+	var bOldPhone = false;
+
+	//	Map Options
+	var MY_MAPTYPE_ID = "roadmap";
+	var featureOpts = [
+			/*{
+				stylers: [
+					{ hue: '#890000' },
+					{ visibility: 'simplified' },
+					{ gamma: 0.5 },
+					{ weight: 0.5 }
+				]
+			},
+			{
+				elementType: 'labels',
+				stylers: [
+					{ visibility: 'off' }
+				]
+			}*//*,
+			{
+				featureType: 'water',
+				stylers: [
+					{ color: '#890000' }
+				]
+			}*/
+		];
+	var map_style = [
+		      {
+		        "featureType": "poi",
+		        "stylers": [
+		          {
+		            "visibility": "off"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "poi.park",
+		        "stylers": [
+		          {
+		            "visibility": "simplified"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road",
+		        "stylers": [
+		          {
+		            "visibility": "simplified"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "water",
+		        "stylers": [
+		          {
+		            "visibility": "simplified"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "transit",
+		        "stylers": [
+		          {
+		            "visibility": "simplified"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "landscape",
+		        "stylers": [
+		          {
+		            "visibility": "simplified"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road.highway",
+		        "stylers": [
+		          {
+		            "visibility": "off"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road.local",
+		        "stylers": [
+		          {
+		            "visibility": "on"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road.highway",
+		        "elementType": "geometry",
+		        "stylers": [
+		          {
+		            "visibility": "on"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road.arterial",
+		        "stylers": [
+		          {
+		            "visibility": "off"
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "water",
+		        "stylers": [
+		          {
+		            "color": "#5f94ff"
+		          },
+		          {
+		            "lightness": 26
+		          },
+		          {
+		            "gamma": 5.86
+		          }
+		        ]
+		      },
+		      {},
+		      {
+		        "featureType": "road.highway",
+		        "stylers": [
+		          {
+		            "weight": 0.6
+		          },
+		          {
+		            "saturation": -85
+		          },
+		          {
+		            "lightness": 61
+		          }
+		        ]
+		      },
+		      {
+		        "featureType": "road"
+		      },
+		      {},
+		      {
+		        "featureType": "landscape",
+		        "stylers": [
+		          {
+		            "hue": "#0066ff"
+		          },
+		          {
+		            "saturation": 74
+		          },
+		          {
+		            "lightness": 100
+		          }
+		        ]
+		      }
+		    ];
+	</script>
+</head>
+
+<body ng-app="Capade" animation="slide-left-right-ios7" class="platform-android platform-cordova platform-webview">
+	<ion-nav-view id="main">
+	</ion-nav-view>
+
+	<div id="fb-root"></div>
+</body>
+
+<!--<script type="text/javascript" src="lib/facebook-connect-plugin/index.js"></script>-->
+
+<script>
+	var glocation = {};
+	var setIntervalUpdate;
+	function CurrentLocationControl(controlDiv, map, location) {
+		glocation = location;
+		// Set CSS for the control border
+		var controlUI = document.createElement('div');
+		controlUI.style.backgroundColor = 'rgba(25,25,25,0)';
+		controlUI.style.border = '0px solid transparent';
+		controlUI.style.borderRadius = '3px';
+		controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,0)';
+		controlUI.style.cursor = 'pointer';
+		controlUI.style.marginTop = '22px';
+		controlUI.style.marginRight = '22px';
+		controlUI.style.textAlign = 'center';
+		controlUI.title = 'Click to recenter the map';
+		controlDiv.appendChild(controlUI);
+
+		// Set CSS for the control interior
+		var controlText = document.createElement('div');
+		controlText.style.color = 'rgba(25,25,25,0)';
+		controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+		controlText.style.fontSize = '16px';
+		controlText.style.lineHeight = '15px';
+		controlText.style.padding = '5px';
+		controlText.innerHTML = '<img src="images/location.png" width="40px" height="40px" />';
+		controlUI.appendChild(controlText);
+
+		// Setup the click event listeners: simply set the map to
+		// Chicago
+		google.maps.event.addDomListener(controlUI, 'click', function() {
+			console.log(glocation);
+			map.setCenter(glocation)
+		});
+	}
+</script>
+
+</html>
