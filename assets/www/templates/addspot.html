@@ -1,0 +1,65 @@
+<ion-view title="addScene" class="gray-bg addscene-page">
+	<ion-header-bar class="red-bg">
+		<div class="buttons">
+            <button class="button back-btn" ng-click="toBack()"></button>
+        </div>
+        <h1 class="title">Add Spot</h1>
+        <div class="buttons">
+        	<div class="coin-info">
+				<img src="images/coin_icon1.png">
+				<div class="value">{{user.Coins}}</div>
+				<br class="clear">
+			</div>
+        </div>
+	</ion-header-bar>
+
+	<ion-content class="has-header" scroll="true" ng-class="(isOverScroll)?'isOverScroll':''">
+
+		<div class="list">
+			<div class="item error-alert" ng-class="(myForm.$invalid)?'animation-show':''" ng-if="show_error">
+
+				<p ng-show="myForm.Name.$error.required">Spot name is required</p>
+				<p ng-show="myForm.Coin.$error.required">Coin is required</p>
+				<p ng-show="myForm.Coin.$error.maxlength && myForm.Coin.$error.min && myForm.Coin.$error.max">Coin must be a number between 0 and 9999.</p>
+
+			</div>
+
+            <form name="myForm" novalidate>
+            	<label class="item item-input">
+					<span class="input-label">Name</span>
+					<input type="text" placeholder="Name" name="Name" ng-model="spot.Name" required delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Coin</span>
+					<input type="tel" placeholder="Coin" name="Coin" ng-model="spot.Coin" ng-min="0" ng-max="9999" ng-maxlength="4" required delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Description</span>
+					<input type="text" placeholder="Description" name="Description" ng-model="spot.Description" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Hint</span>
+					<input type="text" placeholder="Hint" name="Hint" ng-model="spot.Hint" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Puzzle</span>
+					<input type="text" placeholder="Puzzle" name="Puzzle" ng-model="spot.Puzzle" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Puzzle Hint</span>
+					<input type="text" placeholder="Puzzle Hint" name="PuzzleHint" ng-model="spot.PuzzleHint" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Puzzle Answer</span>
+					<input type="text" placeholder="Puzzle Answer" name="PuzzleAnswer" ng-model="spot.PuzzleAnswer" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')" />
+				</label>
+
+				<div>
+					<button class="button button-block button-red-cus" ng-click="onBtnNextClick();" ng-disabled="myForm.$invalid" >Next</button>
+				</div>
+            </form>
+			
+		</div>
+          
+	</ion-content>
+</ion-view>

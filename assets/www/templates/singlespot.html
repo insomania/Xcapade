@@ -1,0 +1,56 @@
+<ion-view title="Single Spot" class="gray-bg">
+	<ion-header-bar class="red-bg">
+		<div class="buttons">
+			<button class="button icon ion-navicon button-clear" style="color: white;" ng-click="toggleMenu();"></button>
+		</div>
+		<h1 class="title logo"></h1>
+		<div class="buttons">
+			<button class="button icon ion-android-share-alt button-clear" style="color: white;" ng-click="onShare();" ng-hide="sceneImageClass_loading"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header spot-details" scroll="true">
+			
+		<div class="marker-img" ng-class="{'no-image' : sceneImageClass_noImage, 'loading' : sceneImageClass_loading }">
+			<ion-spinner icon="bubbles" class="load-icon"></ion-spinner>
+			<ion-slide-box pager-click="true" delegate-handle="scene-img-sliderbox" ng-class="{'hide-pager-slider' : (spot.SceneImageDataList.length < 2) }">
+			  <ion-slide ng-repeat="scene in spot.SceneImageDataList">
+			    <img ng-src="data:image/jpeg;base64,{{scene}}" alt="scene image">
+			  </ion-slide>
+			</ion-slide-box>
+		</div>
+		<div class="spot-infor">
+			<div class="item" style="width: 100%; height: 90px;">
+				<div class="infor">
+					<div class="spot-name">{{spot.Name}}</div>
+					<div class="infor-detail row">
+						<div class="col level-info" style="background-image: url('images/level_icon.png');padding-left: 32px;padding-right: 0px;">{{spot.Difficulty}}</div>
+						<div class="col map-info" style="background-image: url('images/smallmap_icon.png');padding-left: 17px;padding-right: 20px;">{{spot.Distance}}</div>
+						<div class="col coin-info" style="background-image: url('images/smallcoin_icon.png');padding-left: 21px;margin-left: 5px;">{{spot.Coin}}</div>
+					</div>
+				</div>
+				<div class="avatar-img">
+					<img ng-src="{{user.Photo}}" ng-if="(spot.IsFree == 1)" alt="spot image" />
+					<img ng-src="{{spot.OwnerPhoto? spot.OwnerPhoto : 'img/no-avatar-ff.png'}}" ng-if="(spot.IsFree != 1)" alt="spot image" />
+				</div>
+			</div>
+		</div>
+		<div class="desc-btns">
+			<p>{{spot.Description}}</p>
+			<div class="row" align="center">
+				<button style="margin-right: 20px;" ng-click="showHint();">
+					Hint
+				</button>
+				<button ng-click="showReport();">
+					Report
+				</button>
+			</div>
+		</div>
+		<div id="map" class="half-height" data-tap-disabled="true"></div>
+	</ion-content>
+	<ion-footer-bar class="spot-details-footer" align="center">
+		<button class="first" ng-click="onGetToRevealSecret();" ng-if="!isRevealSecret && (spot.IsFree == 0)">Get closer to reveal the secret</button>
+		<button class="first second" ng-click="onPayToRevealSecret('pay');" ng-if="isRevealSecret && (spot.IsFree == 0)"> <i class="coin-icon"></i> {{spot.Coin}}-to reveal the secret</button>
+		<button class="first" ng-click="onPayToRevealSecret('nonPay');" ng-if="(spot.IsFree == 1)">Secret created.</button>
+		<button class="first" ng-click="onPayToRevealSecret('nonPay');" ng-if="(spot.IsFree == 2)">Secret revealed.</button>
+	</ion-footer-bar>
+</ion-view>

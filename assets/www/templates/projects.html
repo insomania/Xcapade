@@ -1,0 +1,33 @@
+<ion-list>
+  <div class="item">
+    请选择项目
+  </div>
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="输入搜索关键字" ng-model="query">
+    </label>
+    <button class="button button-small" ng-click="search(query)">
+      搜索
+    </button>
+    <button class="button button-small" ng-click="clear();query=''">
+      清除
+    </button>
+  </div>
+</ion-list>
+<ion-content class="has-header">
+  <ion-refresher on-refresh="doRefresh()" pulling-text="下拉更新..." refreshing-text="正在更新!" refreshing-icon="ion-loading-c">
+
+  </ion-refresher>
+  <ion-list>
+    <div ng-repeat="group in data.rows track by $index">
+      <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+        <h2>{{group.ProjectName}}</h2>
+        <h4>施工单位：{{group.ConstructUnit}}</h4>
+        <p><i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i> 在线 {{group.Online}} 台，离线 {{group.Offline}} 台，预警 {{group.LV1}} 台，报警 {{group.LV2}} 台</p>
+      </ion-item>
+    </div>
+  </ion-list>
+  <ion-infinite-scroll ng-if="moreCanBeLoad()" icon="ion-loading-c" distance="1%" on-infinite="loadMore()">
+  </ion-infinite-scroll>
+</ion-content>

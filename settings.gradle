@@ -1,0 +1,9 @@
+// GENERATED FILE - DO NOT EDIT
+include ":"
+include ":CordovaLib"
+include ":com.phonegap.plugins.facebookconnect:FacebookLib"
+project(":com.phonegap.plugins.facebookconnect:FacebookLib").projectDir = new File("com.phonegap.plugins.facebookconnect/capade-FacebookLib")
+include ':metaioSDK'
+project(':metaioSDK').projectDir=new File('../../SDK/metaiohelper/metaioSDK')
+include ':metaiohelper'
+project(':metaiohelper').projectDir=new File('../../SDK/metaiohelper')

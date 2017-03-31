@@ -1,0 +1,63 @@
+<ion-view title="GetCoin" class="gray-bg">
+	<ion-header-bar class="red-bg">
+		<div class="buttons">
+            <button class="button back-btn" ng-click="toBack()"></button>
+        </div>
+        <h1 class="title">Get Coin</h1>
+        <div class="buttons">
+        	<div class="coin-info">
+				<img src="images/coin_icon1.png">
+				<div class="value">{{user.Coins}}</div>
+				<br class="clear">
+			</div>
+        </div>
+	</ion-header-bar>
+
+	<ion-content class="has-header coinshop" scroll="true">
+		<ul class="list iap_wrappper">
+			<li ng-click="buyCoins('goldenMember')" ng-show="checkMembership()">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_monthly.png"></div>
+					<div class="col-50">
+						<div class="title">Golden Member</div>
+						<div class="desc">You can get 100 coins with this golden member.</div>
+					</div>
+					<div class="col-25 price">$2.99</div>
+				</div>				
+			</li>
+
+			<li ng-click="buyCoins('coins20')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_20.png"></div>
+					<div class="col-50">
+						<div class="title">Buy 20 Coins</div>
+						<div class="desc">You can get 20 coins with $0.99.</div>
+					</div>
+					<div class="col-25 price">$0.99</div>
+				</div>				
+			</li>
+
+			<li ng-click="buyCoins('coin50')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_50.png"></div>
+					<div class="col-50">
+						<div class="title">Buy 50 Coins</div>
+						<div class="desc">You can get 50 coins with $1.99.</div>
+					</div>
+					<div class="col-25 price">$1.99</div>
+				</div>
+			</li>
+
+			<li ng-click="buyCoins('coin80')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_80.png"></div>
+					<div class="col-50">
+						<div class="title">Buy 80 Coins</div>
+						<div class="desc">You can get 80 coins with $2.99.</div>
+					</div>
+					<div class="col-25 price">$2.99</div>
+				</div>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>

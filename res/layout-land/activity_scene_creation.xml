@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/template_top_level"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:background="@color/custom_dark"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button_x"
+                android:onClick="onXButton"
+                android:alpha="0.95"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_x"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1.0"
+            android:padding="7dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/upload_button"
+                android:onClick="onUploadButton"
+                android:alpha="0.95"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_upload"
+                android:contentDescription=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/add_marker_button"
+                android:onClick="onAddButton"
+                android:alpha="0.95"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="1dp"
+                android:src="@drawable/btn_logo"
+                android:contentDescription=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:padding="7dp"
+            android:layout_weight="1.0">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/save_button"
+                android:onClick="onSaveButton"
+                android:alpha="0.95"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_save"
+                android:contentDescription=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1.0"
+            android:padding="7dp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/new_scene_button"
+                android:onClick="onNewSceneButton"
+                android:alpha="0.95"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_new"
+                android:contentDescription=""/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/marker_fragment_placeholder"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:paddingRight="52dp"/>
+
+</RelativeLayout>
