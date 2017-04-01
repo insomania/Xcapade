@@ -12,7 +12,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.xcapade.R;
+import com.superman.capade.R;
 
 /**
  * A simple {@link Fragment} subclass.

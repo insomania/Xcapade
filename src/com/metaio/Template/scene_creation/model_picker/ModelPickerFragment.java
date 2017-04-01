@@ -12,7 +12,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.xcapade.R;
+import com.superman.capade.R;
 import com.metaio.sdk.MetaioDebug;
 
 /**
@@ -29,6 +29,10 @@ public class ModelPickerFragment extends DialogFragment
 
     private OnModelPickerListener mListener;
 
+    public ModelPickerFragment() {
+
+    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -40,11 +44,6 @@ public class ModelPickerFragment extends DialogFragment
     {
         ModelPickerFragment fragment = new ModelPickerFragment();
         return fragment;
-    }
-
-    public ModelPickerFragment()
-    {
-
     }
 
     @Override

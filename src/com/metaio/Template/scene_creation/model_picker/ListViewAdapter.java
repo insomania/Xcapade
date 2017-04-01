@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.xcapade.R;
+import com.superman.capade.R;
 
 /**
  * Created by darsta on 01-Apr-16.

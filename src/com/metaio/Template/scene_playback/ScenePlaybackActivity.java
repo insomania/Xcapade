@@ -24,8 +24,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.metaio.Template.ar;
-import com.xcapade.MainActivity;
-import com.xcapade.R;
+import com.superman.capade.MainActivity;
+import com.superman.capade.R;
 import com.metaio.sdk.ARViewActivity;
 import com.metaio.sdk.MetaioDebug;
 import com.metaio.sdk.jni.ELIGHT_TYPE;
@@ -57,24 +57,21 @@ import java.util.List;
 
 public class ScenePlaybackActivity extends SectionParent implements PuzzleAnsweringFragment.OnFragmentPuzzleAnsweringListener
 {
-    private MetaioSDKCallbackHandler mSDKCallback;
-
+    final static boolean ENABLE_LIGHTING = true;
   // CONSTANTS
     final static private int COS_ID = 1;
-    final static boolean ENABLE_LIGHTING = true;
-
+    private static final String FIRST_MARKER_IMAGE = "firstMarkerImage";
+    private MetaioSDKCallbackHandler mSDKCallback;
     private ILight mDirectionalLight1;
     private boolean mFirstTrackingEvent = true;
     private ARSceneList mSceneList;
     private ARScene mCurrentScene;
     private String[] spotData;
-
     // New
     private List<IGeometry> mSceneGeoms = new ArrayList<>();
     private LinearLayout loadProgress;
     private ProgressBar previewImageloadProgress;
     private String firstMarkerPath;
-    private static final String FIRST_MARKER_IMAGE = "firstMarkerImage";
     private Handler handler;
     private Runnable myRunnable;
 
@@ -386,48 +383,6 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
         return puzzleStoreData;
     }
 
-    final class MetaioSDKCallbackHandler extends IMetaioSDKCallback
-    {
-        @Override
-        public void onMovieEnd(IGeometry geometry, File filePath)
-        {
-            MetaioDebug.log("movie ended" + filePath.getPath());
-        }
-
-        @Override
-        public void onAnimationEnd(IGeometry geometry, String animationName)
-        {
-            MetaioDebug.log("[onAnimationEnd] Animation: " + animationName);
-        }
-
-        @Override
-        public void onNewCameraFrame(ImageStruct cameraFrame)
-        {
-            MetaioDebug.log("[onNewCameraFrame] image W, H: " + cameraFrame.getWidth() + ", " + cameraFrame.getHeight());
-        }
-
-        @Override
-        public void onTrackingEvent(TrackingValuesVector trackingValues)
-        {
-            MetaioDebug.log("[onTrackingEvent]");
-            for (int i = 0; i < trackingValues.size(); i++)
-            {
-                final TrackingValues v = trackingValues.get(i);
-                final int id = v.getCoordinateSystemID();
-                final boolean trackingState = v.isTrackingState();
-
-                if (trackingState)
-                {
-                    setLightingCOS(id);
-                    if (mFirstTrackingEvent)
-                    {
-                        mFirstTrackingEvent = false;
-                    }
-                }
-            }
-        }
-    }
-
     @Override
     public boolean onTouch(View v, MotionEvent event)
     {
@@ -473,6 +428,40 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
                 }
             }
         });
+    }
+
+    final class MetaioSDKCallbackHandler extends IMetaioSDKCallback {
+        @Override
+        public void onMovieEnd(IGeometry geometry, File filePath) {
+            MetaioDebug.log("movie ended" + filePath.getPath());
+        }
+
+        @Override
+        public void onAnimationEnd(IGeometry geometry, String animationName) {
+            MetaioDebug.log("[onAnimationEnd] Animation: " + animationName);
+        }
+
+        @Override
+        public void onNewCameraFrame(ImageStruct cameraFrame) {
+            MetaioDebug.log("[onNewCameraFrame] image W, H: " + cameraFrame.getWidth() + ", " + cameraFrame.getHeight());
+        }
+
+        @Override
+        public void onTrackingEvent(TrackingValuesVector trackingValues) {
+            MetaioDebug.log("[onTrackingEvent]");
+            for (int i = 0; i < trackingValues.size(); i++) {
+                final TrackingValues v = trackingValues.get(i);
+                final int id = v.getCoordinateSystemID();
+                final boolean trackingState = v.isTrackingState();
+
+                if (trackingState) {
+                    setLightingCOS(id);
+                    if (mFirstTrackingEvent) {
+                        mFirstTrackingEvent = false;
+                    }
+                }
+            }
+        }
     }
 
     class FetchRtmpURL extends AsyncTask<String, String, String> {

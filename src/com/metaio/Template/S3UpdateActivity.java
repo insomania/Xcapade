@@ -7,12 +7,12 @@ import android.view.Gravity;
 import android.widget.Toast;
 
 import com.metaio.Template.scene_playback.ScenePlaybackActivity;
-import com.xcapade.MainActivity;
+import com.superman.capade.MainActivity;
 import com.zumoko.metaiohelper.aws.s3.S3InternalFolderUpdaterAsyncTask;
 import com.zumoko.metaiohelper.scene_general.ARModelList;
 import com.zumoko.metaiohelper.scene_general.ARSceneList;
 
-import com.xcapade.R;
+import com.superman.capade.R;
 
 public class S3UpdateActivity extends Activity
 {
@@ -54,7 +54,7 @@ public class S3UpdateActivity extends Activity
         };
 
         S3InternalFolderUpdaterAsyncTask modelsDownloader = new S3InternalFolderUpdaterAsyncTask(getApplicationContext(),
-                S3UpdateActivity.this, "Application Updating : Models",
+                S3UpdateActivity.this, "Detecting Props",
                 successModels, mFailureAction);
         modelsDownloader.execute("AKIAIBWTHFHR4RRBFGTA", "5gpPz9iBuDbZoAAMOCRtIQnV58P4fxB/tv7UjXip", mBucketName, ARModelList.getDefaultModelsFolder());
     }
@@ -71,7 +71,7 @@ public class S3UpdateActivity extends Activity
         };
 
         S3InternalFolderUpdaterAsyncTask scenesDownloader = new S3InternalFolderUpdaterAsyncTask(getApplicationContext(),
-                S3UpdateActivity.this, "Application Updating : Scenes",
+                S3UpdateActivity.this, "Scanning Scenes",
                 successScenes, mFailureAction);
         scenesDownloader.execute("AKIAIBWTHFHR4RRBFGTA", "5gpPz9iBuDbZoAAMOCRtIQnV58P4fxB/tv7UjXip", mBucketName, ARSceneList.getDefaultScenesFolder());
     }
