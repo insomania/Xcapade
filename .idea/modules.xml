@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.phonegap.plugins.facebookconnect/capade-FacebookLib/FacebookLib.iml" filepath="$PROJECT_DIR$/com.phonegap.plugins.facebookconnect/capade-FacebookLib/FacebookLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Xcapade.iml" filepath="$PROJECT_DIR$/Xcapade.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.phonegap.plugins.facebookconnect/com.phonegap.plugins.facebookconnect.iml" filepath="$PROJECT_DIR$/com.phonegap.plugins.facebookconnect/com.phonegap.plugins.facebookconnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../SDK/metaiohelper/metaioSDK/metaioSDK.iml" filepath="$PROJECT_DIR$/../../SDK/metaiohelper/metaioSDK/metaioSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../SDK/metaiohelper/metaiohelper.iml" filepath="$PROJECT_DIR$/../../SDK/metaiohelper/metaiohelper.iml" />

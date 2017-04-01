@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.xcapade.BuildConfig;
+import com.superman.capade.BuildConfig;
 import com.metaio.sdk.MetaioDebug;
 import com.metaio.tools.io.AssetsManager;
-import com.xcapade.R;
+import com.superman.capade.R;
 
 public class AssetManager extends Activity
 {
@@ -31,6 +31,24 @@ public class AssetManager extends Activity
 
 		mTask = new AssetsExtracter();
 		mTask.execute(0);
+	}
+
+	private void goToNextActivity() {
+		setProgressCircleVis(View.GONE);
+		Intent intent = new Intent(getApplicationContext(), S3UpdateActivity.class);
+		startActivity(intent);
+	}
+
+	private void setProgressCircleVis(final int vis) {
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				View pc = findViewById(R.id.progress_circle);
+				if (pc != null) {
+					pc.setVisibility(vis);
+				}
+			}
+		});
 	}
 
 	private class AssetsExtracter extends AsyncTask<Integer, Integer, Boolean>
@@ -71,29 +89,6 @@ public class AssetManager extends Activity
 
 			finish();
 	    }
-	}
-
-	private void goToNextActivity()
-	{
-		setProgressCircleVis(View.GONE);
-		Intent intent = new Intent(getApplicationContext(), S3UpdateActivity.class);
-		startActivity(intent);
-	}
-
-	private void setProgressCircleVis(final int vis)
-	{
-		runOnUiThread(new Runnable()
-		{
-			@Override
-			public void run()
-			{
-			View pc = findViewById(R.id.progress_circle);
-			if (pc!=null)
-			{
-				pc.setVisibility(vis);
-			}
-			}
-		});
 	}
 }
 

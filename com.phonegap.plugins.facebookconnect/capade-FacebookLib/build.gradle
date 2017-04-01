@@ -72,7 +72,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-    buildToolsVersion '24.0.3'
+    buildToolsVersion '25.0.0'
 }
 
 if (file('build-extras.gradle').exists()) {

@@ -1,23 +1,19 @@
 [
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_disabled.9.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_disabled.9.png"
-    },
-    {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background_selected.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_background_selected.png"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_list_section_header_background.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_list_section_header_background.9.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_selected.xml",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_selected.xml"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_background_transition.xml",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_background_transition.xml"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_grey_normal.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_grey_normal.9.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_pressed.9.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_pressed.9.png"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_profile_default_icon.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_profile_default_icon.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_top_button.xml",
@@ -28,8 +24,8 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_longpressed.9.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector.xml",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector.xml"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_usersettingsfragment_background_gradient.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_usersettingsfragment_background_gradient.xml"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_grey_normal.9.png",
@@ -40,20 +36,16 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_profile_picture_blank_portrait.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check.xml",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check.xml"
-    },
-    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_top_background.xml",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_top_background.xml"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like.xml",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like.xml"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_normal.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_normal.9.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_list_divider.9.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_list_divider.9.png"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_focused.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_focused.9.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_close.png",
@@ -64,24 +56,16 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_list_section_header_background.9.png"
     },
     {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_background_transition.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_background_transition.xml"
+    },
+    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_grey_focused.9.png",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_grey_focused.9.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check_off.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check_off.png"
-    },
-    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.png",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_background.png"
-    },
-    {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_focused.9.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_focused.9.png"
-    },
-    {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_pressed.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_pressed.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_focused.9.png",
@@ -92,8 +76,20 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_grey_pressed.9.png"
     },
     {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_disabled.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_disabled.9.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background_selected.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_background_selected.png"
+    },
+    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_loginbutton_silver.xml",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_loginbutton_silver.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_grey_pressed.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_grey_pressed.9.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_icon_selected.png",
@@ -104,6 +100,154 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_logo.png"
     },
     {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_inverse_icon.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_inverse_icon.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_focused.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_focused.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_place_default_icon.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_place_default_icon.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_profile_picture_blank_portrait.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_profile_picture_blank_portrait.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue.xml",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_icon_selected.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_pressed.9.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_pressed.9.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_logo.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_logo.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_pressed.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_pressed.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_close.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_close.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_top_button.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_top_button.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_top_button.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_top_button.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_pressed.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_disabled.9.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background_selected.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_background_selected.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector_background_transition.xml",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector_background_transition.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_place_default_icon.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_place_default_icon.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_loginbutton_silver.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_loginbutton_silver.xml"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_pressed.9.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_pressed.9.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check.xml"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector.xml",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector.xml"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check.xml",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_pressed.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like.xml",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_selector.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_selector.xml"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_icon.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_icon.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_list_divider.9.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_list_divider.9.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_list_longpressed.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_list_longpressed.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check_off.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check_off.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_list_divider.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_list_divider.9.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue.xml"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_focused.9.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_focused.9.png"
+    },
+    {
+        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_pressed.png",
+        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_pressed.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_profile_picture_blank_square.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_profile_picture_blank_square.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_background.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_top_background.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_top_background.xml"
+    },
+    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_normal.9.png",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_normal.9.png"
     },
@@ -112,16 +256,20 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check_on.png"
     },
     {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_item_background.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_item_background.xml"
+    },
+    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_inverse_icon.png",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_inverse_icon.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_place_default_icon.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_place_default_icon.png"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_grey_focused.9.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_grey_focused.9.png"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue.xml",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue.xml"
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_selected.xml",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_selected.xml"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_usersettingsfragment_background_gradient.xml",
@@ -132,10 +280,6 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_item_background.xml"
     },
     {
-        "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_blue_pressed.9.png",
-        "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_blue_pressed.9.png"
-    },
-    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_picker_top_button.xml",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_picker_top_button.xml"
     },
@@ -144,8 +288,16 @@
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_like_icon.png"
     },
     {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check_on.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check_on.png"
+    },
+    {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_profile_picture_blank_square.png",
         "source": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_profile_picture_blank_square.png"
+    },
+    {
+        "merged": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_check_off.png",
+        "source": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\res\\drawable\\com_facebook_button_check_off.png"
     },
     {
         "merged": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_profile_default_icon.png",

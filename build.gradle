@@ -30,7 +30,7 @@ buildscript {
     // http://tools.android.com/tech-docs/new-build-system/version-compatibility
     // and https://issues.apache.org/jira/browse/CB-8143
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
     }
 }
 
@@ -250,7 +250,8 @@ android {
   if (cdvDebugSigningPropertiesFile) {
     addSigningProps(cdvDebugSigningPropertiesFile, signingConfigs.debug)
   }
-  buildToolsVersion '24.0.3'}
+    buildToolsVersion '25.0.0'
+}
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')

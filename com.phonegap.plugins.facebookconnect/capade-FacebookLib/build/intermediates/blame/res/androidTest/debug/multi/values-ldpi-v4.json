@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldpi-v4\\values-ldpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "H:\\XcapadeFullSource\\Capade_new\\platforms\\Xcapade\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\bundles\\debug\\res\\values-ldpi-v4\\values-ldpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Xcapade\\Capade_new\\platforms\\android\\com.phonegap.plugins.facebookconnect\\capade-FacebookLib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldpi-v4\\values-ldpi-v4.xml",
         "map": [
             {

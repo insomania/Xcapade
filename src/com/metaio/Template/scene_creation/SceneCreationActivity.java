@@ -26,8 +26,8 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.metaio.Template.ar;
-import com.xcapade.MainActivity;
-import com.xcapade.R;
+import com.superman.capade.MainActivity;
+import com.superman.capade.R;
 import com.metaio.Template.scene_creation.model_picker.ModelPickerFragment;
 import com.metaio.Template.scene_creation.model_picker.UIModelList;
 import com.metaio.sdk.ARViewActivity;
@@ -71,55 +71,39 @@ import java.util.List;
 public class SceneCreationActivity extends SectionParent implements ModelPickerFragment.OnModelPickerListener,
         SceneSavingFragment.OnFragmentSceneSavingListener,
         FragmentMarkerManagement.OnFragmentMarkerManagementInteractionListener {
-    private MetaioSDKCallbackHandler mSDKCallback;
-    private static String TAG = "SceneCreationActivity";
-
+    final static boolean ENABLE_LIGHTING = true;
     // CONSTANTS
     final static private int COS_ID = 1;
     final static private String PATH_FOLDER_MODELS = ARModelList.getDefaultModelsFolder() + "/";
     final static private String PATH_FOLDER_SCENES = ARSceneList.getDefaultScenesFolder() + "/";
-
     final static private String SAVE_FOLDER_PATH = "SceneSaved/";
     final static private String TEMP_FOLDER_PATH = "SceneTemp/";
-
     final static private String TRACKING_CONFIG_NAME = "config.xml";
     final static private String TRACKING_CONFIG_PATH = SAVE_FOLDER_PATH + TRACKING_CONFIG_NAME;
     final static private String TRACKING_CONFIG_TEMP_PATH = TEMP_FOLDER_PATH + TRACKING_CONFIG_NAME;
-
-    final static boolean ENABLE_LIGHTING = true;
-
-    private ILight mDirectionalLight1;
-
-    private GestureHandlerAndroid mGestureHandler;
-
-    private int mStreamWidth = 256;
-    private int mStreamHeight = 256;
-
-    private boolean mFirstTrackingEvent = true;
-
-    private ARModelList mModelList;
-    private UIModelList mUIModelList;
-
-    private List<ARModel> mSceneModels = new ArrayList<>();
-    private List<ARModel> mSavedSceneModels;
-    private List<IGeometry> mSceneGeoms = new ArrayList<>();
-    private int mGestureHandlerGeomCounter = 0;
-
-    private IGeometry mLastTouchedGeom;
-
-    private LocationManager mLocationManager;
-    private boolean mLocalizationEnabled;
-
     // The minimum distance to change Updates in meters
     private static final float MIN_DISTANCE_CHANGE_FOR_UPDATES = 5.f; // 5 meters
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 0.5 minute
-
-    private FragmentMarkerManagement mMarkerManagementFragment;
-
+    private static String TAG = "SceneCreationActivity";
     TrackingConfigCreatorMultiMarker mTrackingConfigCreator = new TrackingConfigCreatorMultiMarker();
     TrackingConfigCreatorMultiMarker mSavedTrackingConfigCreator = new TrackingConfigCreatorMultiMarker();
-
+    private MetaioSDKCallbackHandler mSDKCallback;
+    private ILight mDirectionalLight1;
+    private GestureHandlerAndroid mGestureHandler;
+    private int mStreamWidth = 256;
+    private int mStreamHeight = 256;
+    private boolean mFirstTrackingEvent = true;
+    private ARModelList mModelList;
+    private UIModelList mUIModelList;
+    private List<ARModel> mSceneModels = new ArrayList<>();
+    private List<ARModel> mSavedSceneModels;
+    private List<IGeometry> mSceneGeoms = new ArrayList<>();
+    private int mGestureHandlerGeomCounter = 0;
+    private IGeometry mLastTouchedGeom;
+    private LocationManager mLocationManager;
+    private boolean mLocalizationEnabled;
+    private FragmentMarkerManagement mMarkerManagementFragment;
     private int mActiveCOS = -1;
 
     // used only when adding/replacing marker
@@ -717,80 +701,6 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
         client.disconnect();
     }
 
-    final class MetaioSDKCallbackHandler extends IMetaioSDKCallback {
-        @Override
-        public void onMovieEnd(IGeometry geometry, File filePath) {
-            MetaioDebug.log("movie ended" + filePath.getPath());
-        }
-
-        @Override
-        public void onAnimationEnd(IGeometry geometry, String animationName) {
-            MetaioDebug.log("[onAnimationEnd] Animation: " + animationName);
-        }
-
-        @Override
-        public void onNewCameraFrame(ImageStruct cameraFrame) {
-            MetaioDebug.log("[onNewCameraFrame] image W, H: " + cameraFrame.getWidth() + ", " + cameraFrame.getHeight());
-        }
-
-        @Override
-        public void onCameraImageSaved(File filePath) {
-            MetaioDebug.log("[onCameraImageSaved] file: " + filePath.toString());
-            mStreamWidth = metaioSDK.getCamera().getResolution().getX();
-            mStreamHeight = metaioSDK.getCamera().getResolution().getY();
-
-            MetaioDebug.log("[onCameraImageSaved] W, H: " + mStreamWidth + ", " + mStreamHeight);
-            if (mMarkerToReplace == -1) {
-                mTrackingConfigCreator.addCOS(filePath.getName(), mStreamWidth, mStreamHeight);
-            } else {
-                final String markerFileToRemove = mTrackingConfigCreator.replaceCOS(mMarkerToReplace, filePath.getName(), mStreamWidth, mStreamHeight);
-                deleteUnusedMarker(markerFileToRemove);
-            }
-
-            resetTempTrackingConfig();
-        }
-
-//        @Override
-//        public void onInstantTrackingEvent(boolean success, File filePath)
-//        {
-//            if (success)
-//            {
-//                metaioSDK.setTrackingConfiguration(filePath);
-//                File file = FileHelpers.getLocalDataFile(TRACKING_CONFIG_TEMP_PATH);
-//                MetaioDebug.log("[onInstantTrackingEvent] config exists = " + file.exists());
-//                MetaioDebug.log("[onInstantTrackingEvent] config size = " + file.length());
-//            }
-//        }
-
-        @Override
-        public void onTrackingEvent(TrackingValuesVector trackingValuesChanged) {
-            MetaioDebug.log("[onTrackingEvent]");
-            boolean oneCosVisible = false;
-
-            TrackingValuesVector trackingValues = metaioSDK.getTrackingValues();
-
-            for (int i = 0; i < trackingValues.size(); i++) {
-                final TrackingValues v = trackingValues.get(i);
-                final int id = v.getCoordinateSystemID();
-                final boolean trackingState = v.isTrackingState();
-
-                MetaioDebug.log("[onTrackingEvent] COS ID = " + id + "; TRACKING = " + trackingState);
-
-                if (trackingState) {
-                    setCurrentCOSVisible(id, true);
-                    oneCosVisible = true;
-                    if (mFirstTrackingEvent) {
-                        mFirstTrackingEvent = false;
-                    }
-                }
-            }
-
-            if (!oneCosVisible) {
-                setCurrentCOSVisible(mActiveCOS, false);
-            }
-        }
-    }
-
     private void resetTempTrackingConfig() {
         MetaioDebug.log("[resetTempTrackingConfig]");
         // re-create config, write to file and load it
@@ -935,6 +845,15 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
         FileHelpers.deleteLocalDataFile(markerPath);
     }
 
+    private void showModelPicker() {
+        MetaioDebug.log(TAG + "[showModelPicker]");
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(ModelPickerFragment.newInstance(), ModelPickerFragment.TAG);
+        ft.commit();
+
+    }
+
     /*
     @Override
     public void recaptureMarker()
@@ -947,15 +866,6 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
         metaioSDK.requestCameraImage(imageFile);
     }
     */
-
-    private void showModelPicker() {
-        MetaioDebug.log(TAG + "[showModelPicker]");
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.add(ModelPickerFragment.newInstance(), ModelPickerFragment.TAG);
-        ft.commit();
-
-    }
 
     private void removeModelPicker() {
         MetaioDebug.log(TAG + "[removeModelPicker]");
@@ -1054,6 +964,80 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
     @Override
     public UIModelList getModelList() {
         return mUIModelList;
+    }
+
+    final class MetaioSDKCallbackHandler extends IMetaioSDKCallback {
+        @Override
+        public void onMovieEnd(IGeometry geometry, File filePath) {
+            MetaioDebug.log("movie ended" + filePath.getPath());
+        }
+
+        @Override
+        public void onAnimationEnd(IGeometry geometry, String animationName) {
+            MetaioDebug.log("[onAnimationEnd] Animation: " + animationName);
+        }
+
+        @Override
+        public void onNewCameraFrame(ImageStruct cameraFrame) {
+            MetaioDebug.log("[onNewCameraFrame] image W, H: " + cameraFrame.getWidth() + ", " + cameraFrame.getHeight());
+        }
+
+        @Override
+        public void onCameraImageSaved(File filePath) {
+            MetaioDebug.log("[onCameraImageSaved] file: " + filePath.toString());
+            mStreamWidth = metaioSDK.getCamera().getResolution().getX();
+            mStreamHeight = metaioSDK.getCamera().getResolution().getY();
+
+            MetaioDebug.log("[onCameraImageSaved] W, H: " + mStreamWidth + ", " + mStreamHeight);
+            if (mMarkerToReplace == -1) {
+                mTrackingConfigCreator.addCOS(filePath.getName(), mStreamWidth, mStreamHeight);
+            } else {
+                final String markerFileToRemove = mTrackingConfigCreator.replaceCOS(mMarkerToReplace, filePath.getName(), mStreamWidth, mStreamHeight);
+                deleteUnusedMarker(markerFileToRemove);
+            }
+
+            resetTempTrackingConfig();
+        }
+
+//        @Override
+//        public void onInstantTrackingEvent(boolean success, File filePath)
+//        {
+//            if (success)
+//            {
+//                metaioSDK.setTrackingConfiguration(filePath);
+//                File file = FileHelpers.getLocalDataFile(TRACKING_CONFIG_TEMP_PATH);
+//                MetaioDebug.log("[onInstantTrackingEvent] config exists = " + file.exists());
+//                MetaioDebug.log("[onInstantTrackingEvent] config size = " + file.length());
+//            }
+//        }
+
+        @Override
+        public void onTrackingEvent(TrackingValuesVector trackingValuesChanged) {
+            MetaioDebug.log("[onTrackingEvent]");
+            boolean oneCosVisible = false;
+
+            TrackingValuesVector trackingValues = metaioSDK.getTrackingValues();
+
+            for (int i = 0; i < trackingValues.size(); i++) {
+                final TrackingValues v = trackingValues.get(i);
+                final int id = v.getCoordinateSystemID();
+                final boolean trackingState = v.isTrackingState();
+
+                MetaioDebug.log("[onTrackingEvent] COS ID = " + id + "; TRACKING = " + trackingState);
+
+                if (trackingState) {
+                    setCurrentCOSVisible(id, true);
+                    oneCosVisible = true;
+                    if (mFirstTrackingEvent) {
+                        mFirstTrackingEvent = false;
+                    }
+                }
+            }
+
+            if (!oneCosVisible) {
+                setCurrentCOSVisible(mActiveCOS, false);
+            }
+        }
     }
 
     class FetchRtmpURL extends AsyncTask<String, String, String> {
