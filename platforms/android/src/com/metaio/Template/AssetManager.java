@@ -64,7 +64,7 @@ public class AssetManager extends Activity
 			}
 			else
 			{
-				Toast toast = Toast.makeText(getApplicationContext(), "Error extracting application assets!", Toast.LENGTH_SHORT);
+				Toast toast = Toast.makeText(getApplicationContext(), "Fail to extract puzzle elements.", Toast.LENGTH_SHORT);
 				toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
 				toast.show();
 			}

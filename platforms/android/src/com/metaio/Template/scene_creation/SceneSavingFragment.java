@@ -130,9 +130,6 @@ public class SceneSavingFragment extends DialogFragment
             if(spotStoreData[4] == null || spotStoreData[4].trim().isEmpty()) {
                 spotStoreData[4] = "What is this app's name?";
             }
-            if(spotStoreData[5] == null || spotStoreData[5].trim().isEmpty()) {
-                spotStoreData[5] = "Xcapade";
-            }
 
             name.setText(spotStoreData[0]);
             coin.setText(spotStoreData[1]);

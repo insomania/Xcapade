@@ -3,7 +3,7 @@
 		<div class="buttons">
             <button class="button back-btn" ng-click="toBack()"></button>
         </div>
-        <h1 class="title">Get Coin</h1>
+        <h1 class="title">Get Coins</h1>
         <div class="buttons">
         	<div class="coin-info">
 				<img src="images/coin_icon1.png">
@@ -23,7 +23,7 @@
 						<div class="desc">{{products[0].description}}</div>
 					</div>
 					<div class="col-25 price">{{products[0].price}}</div>
-				</div>				
+				</div>
 			</li>
 
 			<li ng-show="!checkMembership()">
@@ -32,7 +32,7 @@
 					<div class="col-75">
 						<div class="title">Your membership was already upgraded.</div>
 					</div>
-				</div>				
+				</div>
 			</li>
 
 			<li class="buy-item" ng-click="buyCoins('coins20')">
@@ -43,7 +43,7 @@
 						<div class="desc">{{products[1].description}}</div>
 					</div>
 					<div class="col-25 price">{{products[1].price}}</div>
-				</div>				
+				</div>
 			</li>
 
 			<li class="buy-item" ng-click="buyCoins('coin50')">

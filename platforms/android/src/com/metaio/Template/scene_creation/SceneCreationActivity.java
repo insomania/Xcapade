@@ -223,7 +223,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             boolean isNetworkEnabled = mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
             if (!isGPSEnabled && !isNetworkEnabled) {
-                showToast("Please enable the GPS localization before scene creation");
+                showToast("Please enable GPS before creating your puzzle.");
                 mLocalizationEnabled = false;
             } else {
                 mLocalizationEnabled = true;
@@ -329,8 +329,8 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
     public void onNewSceneButton(View view) {
         MetaioDebug.log(TAG + "[onNewSceneButton]");
         new AlertDialog.Builder(SceneCreationActivity.this)
-                .setTitle("New Scene")
-                .setMessage("Are you sure you want to clear everything and start from blank scene?")
+                .setTitle("Create New Scene")
+                .setMessage("Everything you made earlier will be erased")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         restartActivity();
@@ -360,12 +360,12 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
         // check if the tracking config exists
         File tempTrackingFile = FileHelpers.getLocalDataFile(TRACKING_CONFIG_TEMP_PATH);
         if (!tempTrackingFile.exists()) {
-            showToast("Error encountered. You first need to capture the marker, in order to save the scene.");
+            showToast("You must create at least one marker to save the scene.");
             return;
         }
 
         if (mSceneGeoms.size() == 0) {
-            showToast("Error encountered. You first need to insert models to the scene, in order to save it.");
+            showToast("You must create at least one object on the marker to save the scene.");
             return;
         }
 
@@ -399,15 +399,15 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
 
         if (spotName.equalsIgnoreCase(""))
         {
-            showToast("Please input the Scene Name.");
+            showToast("A good scene name help you attract more players.");
             return;
         }
         else if(spotCoin.equalsIgnoreCase("")) {
-            showToast("Please input the Coin.");
+            showToast("You need to decide how much you got paid every time when other player visits your puzzle.");
             return;
         }
         else if(spotPuzzleAnswer.equalsIgnoreCase("")) {
-            showToast("Please input the Puzzle Answer.");
+            showToast("A reasonable answer will bring more players back. Do not leave it blank.");
             return;
         }
         else {
@@ -458,7 +458,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             lat = location.getLatitude();
             lngt = location.getLongitude();
         } else {
-            showToast("Error encountered. Please enable the GPS/Network based localization prior the scene saving.");
+            showToast("Location needs to be enabled before you save your puzzle.");
             return;
         }
 
@@ -468,7 +468,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
                 mSceneModels, mSceneGeoms);
 
         if (mSavedSceneModels == null) {
-            showToast("Error encountered. You first need to capture the marker and insert models to the scene, in order to save it.");
+            showToast("Marker or model have not been correctly placed, please complete your puzzle setup.");
             return;
         }
 
@@ -498,13 +498,13 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
 
         //  0. check if saved config exists
         if (!savedSceneExists()) {
-            showToast("Error encountered. A scene needs to be saved first, in order to upload it.");
+            showToast("Before uploading your puzzle, please save it first.");
             return;
         }
 
         //  1. check if internet connectivity exists
         if (!isNetworkAvailable()) {
-            showToast("Error encountered. Please check your Internet connectivity.");
+            showToast("Please check your network connection.");
             return;
         }
 
@@ -686,7 +686,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
 
             useAbsolutePaths(true);
         } catch (Exception e) {
-            MetaioDebug.log(Log.ERROR, "Failed to load content: " + e);
+            MetaioDebug.log(Log.ERROR, "Failed to load the puzzle: " + e);
             this.finish();
         }
     }
@@ -935,7 +935,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             public void run() {
                 new AlertDialog.Builder(SceneCreationActivity.this)
                         .setTitle("Remove Model")
-                        .setMessage("Are you sure you want to delete the last manipulated model?")
+                        .setMessage("The current model will be removed?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 removeModel(mLastTouchedGeom);
@@ -1065,7 +1065,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
                     mGestureHandler.removeObject(geomToRemove);
                 }
                 else {
-                    showToast("The main model can't be removed from the first scene.");
+                    showToast("The main object cannot be removed from this marker.");
                 }
 
             }
@@ -1155,7 +1155,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             Runnable success = new Runnable() {
                 @Override
                 public void run() {
-                    showToast("Scene uploaded successfully.");
+                    showToast("Puzzle is posted successfully.");
                     clearDir(SAVE_FOLDER_PATH);
 
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -1169,7 +1169,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             Runnable failure = new Runnable() {
                 @Override
                 public void run() {
-                    showToast("Error uploading scene!\n\nPlease check your Internet connectivity.");
+                    showToast("Error posting this puzzle.\n\nPlease check your network connection.");
                     FileHelpers.deleteRecursive(sceneFolder);
                     Intent intent = new Intent(getApplicationContext(), SceneCreationActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
@@ -1178,7 +1178,7 @@ public class SceneCreationActivity extends SectionParent implements ModelPickerF
             };
 
             S3FolderUploadAsyncTask uploader = new S3FolderUploadAsyncTask(getApplicationContext(),
-                    SceneCreationActivity.this, "Saved scene uploading",
+                    SceneCreationActivity.this, "Uploading the puzzle...",
                     success, failure);
 
             final String bucketName = getResources().getString(R.string.aws_s3_bucket);

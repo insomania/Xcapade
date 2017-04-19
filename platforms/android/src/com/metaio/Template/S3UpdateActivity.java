@@ -72,7 +72,7 @@ public class S3UpdateActivity extends Activity
         };
 
         S3InternalFolderUpdaterAsyncTask modelsDownloader = new S3InternalFolderUpdaterAsyncTask(getApplicationContext(),
-                S3UpdateActivity.this, "Application Updating : Models",
+                S3UpdateActivity.this, "Collect new puzzle elements:",
                 successModels, mFailureAction);
         modelsDownloader.execute(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, mBucketName, ARModelList.getDefaultModelsFolder());
     }
@@ -89,7 +89,7 @@ public class S3UpdateActivity extends Activity
         };
 
         S3InternalFolderUpdaterAsyncTask scenesDownloader = new S3InternalFolderUpdaterAsyncTask(getApplicationContext(),
-                S3UpdateActivity.this, "Application Updating : Scenes",
+                S3UpdateActivity.this, "Preload detect module:",
                 successScenes, mFailureAction);
         //scenesDownloader.execute(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, mBucketName, ARSceneList.getDefaultScenesFolder());
         String selectSceneFolderName = ARSceneList.getDefaultScenesFolder() + "/" + AWS_SceneFoler_Name;

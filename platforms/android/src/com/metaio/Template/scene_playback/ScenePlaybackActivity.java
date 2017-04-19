@@ -199,7 +199,7 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
     public void onXButton(View view)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder .setMessage("The secret haven’t been solved. You will not receive any rewards. Do you really want to quit?")
+        builder .setMessage("The puzzle haven’t been solved. You will not receive any rewards. Do you really want to quit?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -289,7 +289,7 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
         }
         catch (Exception e)
         {
-            MetaioDebug.log(Log.ERROR, "Failed to load content: " + e);
+            MetaioDebug.log(Log.ERROR, "Failed to load this puzzle: " + e);
             this.finish();
         }
     }
@@ -338,14 +338,14 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
         if(!answerStr.equals(spotData[5]))
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder .setMessage("The answer is not right")
+            builder .setMessage("Think about it one more time.")
                     .setPositiveButton("Back", null)
                     .show();
         }
         else
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder .setMessage("The answer is right")
+            builder .setMessage("Congratulations! Your answer is right.")
                     .setPositiveButton("Continue", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -464,7 +464,7 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
                 }
                 else
                 {
-                    showToast("Error encountered. The scene configuration is not valid. Please restart the app.");
+                    showToast("The puzzle seems unfriendly to you. Please restart again.");
                     if (mCurrentScene!=null)
                     {
                         mCurrentScene.loadTrackingConfig(metaioSDK);
@@ -557,7 +557,7 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
             }
 
             if(status) {
-                showToast("Great! You successfully resolved this scene. You can try to resolve the other scene.");
+                showToast("Congrats! Share this puzzle and let your friends know.");
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
@@ -566,7 +566,7 @@ public class ScenePlaybackActivity extends SectionParent implements PuzzleAnswer
                 ar.callbackContextKeepCallback.success("success");
             }
             else {
-                showToast("Server connection error. Please check your Internet connectivity.");
+                showToast("Server connection error. Please check your network connection.");
             }
 
         }

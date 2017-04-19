@@ -132,8 +132,8 @@ public class FragmentMarkerManagement extends Fragment
         if (mListener != null)
         {
             new AlertDialog.Builder(getActivity())
-                    .setTitle("Remove Marker")
-                    .setMessage("Are you sure you want to delete marker and its models?")
+                    .setTitle("Remove Current Marker")
+                    .setMessage("This marker and all objects you placed will be deleted")
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int which)
