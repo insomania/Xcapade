@@ -1,0 +1,66 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "ionic-plugin-deploy": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "com.phonegap.plugins.facebookconnect": {
+            "APP_ID": "359848967558395",
+            "APP_NAME": "Xcapade Mobile",
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "com.metaio.ar": {
+            "PACKAGE_NAME": "com.superman.capade"
+        },
+        "cordova-plugin-inapppurchase": {
+            "PACKAGE_NAME": "com.superman.capade"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.superman.capade"
+        }
+    }
+}

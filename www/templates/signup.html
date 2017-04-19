@@ -1,0 +1,37 @@
+<ion-view title="Signup" class="gray-bg">
+    <ion-header-bar class="red-bg">
+        <div class="buttons">
+            <button class="button back-btn" ng-click="gotoWelcome()"></button>
+        </div>
+        <h1 class="title logo"></h1>
+        <div class="buttons"></div>     
+    </ion-header-bar>
+    <ion-content scroll="true" ng-class="(isOverScroll)?'isOverScroll':''">
+        <div class="signup-logo_wrapper" align="center">
+            <div class="add_photo" ng-click="onAddAvatarImg()"></div>
+        </div>
+
+        <div class="login-wrapper" align="center">
+              <div class="item error-alert" ng-class="(signup_error)?'animation-show':''">
+                  {{signup_error}}
+              </div>
+              <form>
+                  <div class="input-wrapper username-wrapper">
+                      <input type="text" placeholder="User Name" ng-model="newuser.Name" ng-keypress="checkIfEnterKeyWasPressed($event)" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')"></input>
+                  </div>
+                  <div class="input-wrapper email-wrapper">
+                      <input type="email" placeholder="Email" ng-model="newuser.Email" ng-keypress="checkIfEnterKeyWasPressed($event)" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')"></input>
+                  </div>
+                  <div class="input-wrapper password-wrapper">
+                      <input type="password" placeholder="Password" ng-model="newuser.Password" ng-keypress="checkIfEnterKeyWasPressed($event)" minlength="1" autocomplete="off" autocapitalize="off" autocorrect="off" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')"></input>
+                  </div>
+                  <div class="input-wrapper password-wrapper">
+                      <input type="password" placeholder="Confirm password" ng-model="newuser.Confirm" ng-keypress="checkIfEnterKeyWasPressed($event)" delegate-handle="myInput" ng-focus="keyboardFocus('myInput')" ng-blur="keyboardBlur('myInput')"></input>
+                  </div>
+              </form>
+              <div>
+                  <button class="button button-block button-red-cus" ng-click="onBtnNextClick();">Sign Up</button>
+              </div>
+        </div>
+    </ion-content>
+</ion-view>

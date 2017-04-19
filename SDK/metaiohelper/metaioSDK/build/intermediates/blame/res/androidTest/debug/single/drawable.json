@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/rating_drawable.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/rating_drawable.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/progress_bar.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/progress_bar.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/button_detail_green.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/button_detail_green.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/selector_web_forward.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/selector_web_forward.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/button_detail_blue.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/button_detail_blue.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/selector_web_back.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/selector_web_back.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/simple_button_background_selector.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/simple_button_background_selector.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/divider.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/divider.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/toastbackground.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/toastbackground.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/selector_darker.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/selector_darker.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/res/merged/androidTest/debug/drawable/default_video_poster.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/metaioSDK/build/intermediates/bundles/debug/res/drawable/default_video_poster.png"
+    }
+]

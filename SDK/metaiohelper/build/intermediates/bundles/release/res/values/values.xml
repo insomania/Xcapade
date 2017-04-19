@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item format="float" name="app_volume" type="dimen">0.2</item>
+    <string name="site_not_available">Content is not available. Please check your network connectivity.</string>
+</resources>

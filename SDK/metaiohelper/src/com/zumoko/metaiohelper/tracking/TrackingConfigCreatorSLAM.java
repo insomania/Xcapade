@@ -1,0 +1,17 @@
+package com.zumoko.metaiohelper.tracking;
+
+/**
+ * Created by darsta on 01-Mar-16.
+ */
+public class TrackingConfigCreatorSLAM
+{
+    public static String createConfig(String imageFile, int width, int height)
+    {
+        String start = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <TrackingData>     <Sensors>         <Sensor Type=\"SLAMSensorSource\" Version=\"2\">             <SensorID>SLAM</SensorID>             <Parameters>                 <MaxObjectsToDetectPerFrame>5</MaxObjectsToDetectPerFrame>                 <MaxObjectsToTrackInParallel>1</MaxObjectsToTrackInParallel>             </Parameters>             <SensorCOS>                 <SensorCosID>c0b34639c0e05e137ce51394bf96cae3</SensorCosID>                 <Parameters>                     <Initialization Type=\"image\">";
+        String middle = "<ReferenceImage HeightMM=\"" + height + "\" WidthMM=\"" + width +"\">" + imageFile + "</ReferenceImage>";
+        String end = "                        <SimilarityThreshold>0.7</SimilarityThreshold>                     </Initialization>                     <Learning Enabled=\"true\">                         <MinNumberOfObservations>3</MinNumberOfObservations>                         <MinTriangulationAngle>5.0</MinTriangulationAngle>                     </Learning>                     <Tracking>                         <AlignZAxisWithGravity>false</AlignZAxisWithGravity>                     </Tracking>                 </Parameters>             </SensorCOS>         </Sensor>     </Sensors>     <Connections>         <COS>             <Name>ar2_1</Name>             <Fuser Type=\"SmoothingFuser\">                 <Parameters>                     <AlphaRotation>0.8</AlphaRotation>                     <AlphaTranslation>1.0</AlphaTranslation>                     <GammaRotation>0.8</GammaRotation>                     <GammaTranslation>1.0</GammaTranslation>                     <KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>                 </Parameters>             </Fuser>             <SensorSource>                 <SensorID>SLAM</SensorID>                 <SensorCosID>c0b34639c0e05e137ce51394bf96cae3</SensorCosID>                 <HandEyeCalibration>                     <TranslationOffset>                         <x>0.0</x>                         <y>0.0</y>                         <z>0.0</z>                     </TranslationOffset>                     <RotationOffset>                         <x>0.0</x>                         <y>0.0</y>                         <z>0.0</z>                         <w>1.0</w>                     </RotationOffset>                 </HandEyeCalibration>                 <COSOffset>                     <TranslationOffset>                         <x>-280.0</x>                         <y>1.0</y>                         <z>0.0</z>                     </TranslationOffset>                     <RotationOffset>                         <x>0.0</x>                         <y>0.0</y>                         <z>0.0</z>                         <w>1.0</w>                     </RotationOffset>                 </COSOffset>             </SensorSource>         </COS>     </Connections> </TrackingData>";
+        String tracking = start + middle + end;
+
+        return tracking;
+    }
+}

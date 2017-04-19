@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_search_bar_layout.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_search_bar_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_row.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_list_row.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_checkbox.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_checkbox.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_section_header.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_list_section_header.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_image.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_image.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_title_bar.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment_list_row.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_placepickerfragment_list_row.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar_stub.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_title_bar_stub.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_usersettingsfragment.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_usersettingsfragment.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_placepickerfragment.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_search_box.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_search_box.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_picker_activity_circle_row.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_picker_activity_circle_row.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_login_activity_layout.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_login_activity_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/debug/layout/com_facebook_friendpickerfragment.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/res/layout/com_facebook_friendpickerfragment.xml"
+    }
+]

@@ -1,0 +1,988 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url(./fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: LatoSemibold;
+    src: url(./fonts/Lato-Semibold.ttf);
+}
+@font-face {
+    font-family: LatoMedium;
+    src: url(./fonts/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: LatoBold;
+    src: url(./fonts/Lato-Bold.ttf);
+}
+
+.background, .background .pane, .background .item, .background .item-complex .item-content {
+	background-color: white;
+}
+
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, Roboto, 'Droid Sans', "Lucida Grande", sans-serif;
+}
+
+.clear {
+	float: none !important;
+	clear: both;
+	height: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bar.bar-custom {
+	border-color: #CB3727;
+	background-color: #CB3727;
+	/*background-image: linear-gradient(0deg,#b2b2b2,#b2b2b2 50%,transparent 50%);*/
+}
+
+.custom_background {
+	background-color: #FF6666;
+}
+
+.btn-fb-login {
+	width: 250px;
+	margin: 20px auto;
+	display: block;
+	background: url('../img/fb-login.png') no-repeat;
+	background-size: 100% 100%;
+	border: 0px none;
+}
+
+.btn-adventure-login {
+	width: 250px;
+	margin: 20px auto;
+	display: block;
+	background: url('../img/adventure-login.png') no-repeat;
+	background-size: 100% 100%;
+	border: 0px none;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+.angular-google-map {
+	width: 100%;
+	height: 100%; 
+}
+
+.angular-google-map-container {
+	width: 100%;
+	height: 100%; 
+}
+
+
+.scroll {
+	height: calc(100% - 45px);
+}
+
+ion-side-menu ul li a {
+	color: #000;
+	margin-left: 10px;
+}
+
+
+
+/*	input style	*/
+.custom-input {
+	background-color: transparent;
+	border-color: #FFF;
+}
+
+.custom-input input {
+	color: #FFF;
+}
+
+/*	list style	*/
+.list {
+	background-color: transparent;
+}
+
+div.item {
+	background-color: transparent;
+	border: 0px none;
+	overflow: visible;
+	padding: 0px;
+}
+
+div.item.custom_back {
+	background-color: #00A0B0;
+	padding: 10px;
+}
+
+div.item.custom_back span {
+	color: white;
+}
+
+/*	Checkbox	*/
+label.item.item-checkbox {
+	background-color: transparent;
+	border: 0px none;
+}
+
+/*	select	*/
+label.item.item-select {
+	background-color: transparent;
+	border: 0px none;
+	width: 100%;
+	padding-left: 0px;
+}
+
+label.item.item-select div {
+	color: #BBE7F0;
+}
+
+label.item.item-select select {
+	border: 0px none;
+	background-color: transparent;
+}
+
+/*	Button Style	*/
+
+
+.button-submit {
+	background-color: #3DCEE4;
+	border: 0px none;
+}
+
+/*	button in list style	*/
+div.item.item-button-left, div.item.item-button-right {
+	height: 36px;
+}
+
+div.item .button {
+	color: #FFF;
+}
+
+div.item.item-button-left .button {
+	left: 0px;
+}
+
+div.item.item-button-right .button {
+	right: 0px;
+}
+
+div.list.margin label {
+	margin-bottom: 10px;
+}
+
+.horizontal-style {
+	display: table;
+	width: 100%;
+	/*table-layout: fixed;*/
+}
+.horizontal-style li {
+	display: table-cell;
+	background-color: transparent;
+	border: 0px none;
+}
+
+/*	button style on login page-break-after: */
+.login .button-selected {
+	background-color: #FFF;
+	color: #3DCEE4;
+	border-color: #FFF;
+}
+
+.login .button-unselected {
+	background-color: transparent;
+	color: #FFF;
+	border-color: #FFF;
+}
+
+
+/*======= Map Styling ============*/
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+/*.gmnoprint div {
+    background:none !important;
+}
+#map div div a div img{
+    display:none;
+}*/
+
+
+/*	custom outline-style: */
+.popup .button:first-child {
+	background-color: #cb3727 !important;
+	border-color: #cb3727 !important;
+	border-radius: 10px !important;
+	-webkit-border-radius: 10px !important;
+}
+
+/*	tutorial	*/
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  text-align: center;
+  font-weight: 300;
+}
+.slider i {
+	font-size: 15px;
+}
+
+.box  {
+  height: 100%;
+  background-size: cover;/*100% 100%;*/
+}
+
+.page1 {
+  background-image: url('../img/1.jpg');
+}
+.page2 {
+  background-image: url('../img/2.jpg');
+}
+.page3 {
+  background-image: url('../img/3.jpg');
+}
+.page4 {
+  background-image: url('../img/4.jpg');
+}
+
+/**********************
+*
+**********************/
+.gray-bg{
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top, #f4f4f4 1%, #dbdbdb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f4f4f4 1%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f4f4f4 1%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+
+	width: 100%;
+	height: 100vh;
+	font-family: LatoRegular;
+}
+.wel-logo-wrapper{
+	position: relative;
+	width: 100%;
+}
+.wel-logo-wrapper .logo{
+	width: auto;
+	height: 27vh;
+	max-height: 400px;
+	margin: 15.5vh auto 1.5vh 7vh;
+}
+.wel-button-wrapper{
+	width: 100%;
+	height: 55vh;	
+}
+.wel-button-wrapper button{
+	width: 83%;
+	max-width: 300px;
+	margin-top: 2.5vh;
+	min-height: 6vh;
+	border: 0px solid transparent;
+	color: #ffffff;
+	font-size: 13px;
+}
+.wel-button-wrapper button:active{
+	color: #ffffff;
+	background-color: #AFAFAF;
+}
+.wel-btn-fb-login{
+	margin-top: 4vh !important;
+	background-color: #3e5c9a;
+	background-image: url("../images/fb_icon.png");
+	background-repeat: no-repeat;
+	background-size: auto 55%;
+	background-position: left 20px center;
+}
+.wel-separator{
+	background: url("../images/or_symbol.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 98%;
+	width: 83%;
+	max-width: 300px;
+	height: 22px;
+	margin-top: 5vh;
+	margin-bottom: 10px;
+}
+.wel-btn-adventure-login{
+	background-color: #ff5050;
+}
+
+/*************************
+* Signin Page
+*************************/
+.red-bg{
+	background-color: #ff5050 !important;
+}
+.red-bg h1.logo{
+	background-image: url("../images/top_logo.png");
+	background-position: center center;
+	background-size: auto 50%;
+	background-repeat: no-repeat;	
+}
+.red-bg h1{
+	color: #ffffff;
+	font-family: LatoSemibold;
+	font-size: 18px !important;
+	left: 0px !important;
+	right: 0px !important;
+	text-align: center !important;
+}
+.back-btn{
+	background-image: url("../images/back_icon.png");
+	background-color: transparent !important;
+	background-repeat: no-repeat;
+	background-position: left 20px center;
+	background-size: auto 45%;
+	border: 0px solid transparent;
+	width: 50px;
+
+}
+.login-logo_wrapper{
+	position: relative;
+	width: 100%;
+	height: 35vh;
+}
+.login-logo_wrapper .logo{
+	width: auto;
+	height: 28vh;
+	max-height: 400px;
+	margin: 8vh auto 1.5vh 7vh;
+}
+.login-wrapper form{
+	width: 85%;
+}
+.input-wrapper{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #363636;
+	padding: 0px 0px 0px 35px;
+	background-size: auto 35%;
+	background-repeat: no-repeat;
+	background-position: left 5px center;
+}
+.input-wrapper input, .input-wrapper textarea{
+	background: none !important;
+	color: #333333;
+	width: 100%;
+}
+/*	Placeholder color: */
+input::-webkit-input-placeholder { /* WebKit browsers */
+	color: #888888;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	 color: #888888;
+	 opacity: 1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	 color:	#888888;
+	 opacity:	1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	 color: #888888;
+}
+.username-wrapper{
+	background-image: url("../images/username_icon.png");
+}
+.email-wrapper{
+	background-image: url("../images/email_icon.png");
+}
+.password-wrapper{
+	background-image: url("../images/password_icon.png");
+}
+.remember-toggle{
+	width: 85%;
+}
+.remember-toggle .toggle{
+	right: 0px;
+	top: -4px !important;
+}
+.remember-toggle .toggle .track {
+	background-color: #cccccc;
+    border: 2px solid #cccccc;
+}
+.remember-toggle .toggle input:checked + .track {
+	background-color: #ff5050;
+    border: 2px solid #ff5050;
+}
+.remember-toggle div:first-child{
+	text-align: right;
+	margin-right: 55px;
+	color: #a5a8a7 !important;
+}
+.button-red-cus{
+	background-color: #ff5050;
+	width: 85% !important;
+	margin-top: 40px !important;
+	border: 0px solid transparent;
+	color: #fff;
+	font-size: 14px !important;
+	min-height: 6vh;
+}
+
+.forgotPass-wrapper{
+	margin-top: 15px;
+}
+.forgotPass-wrapper a{
+	font-size: 14px;
+	text-decoration: underline;
+	color: #2d2d2d;
+}
+.forgotPass-wrapper a:active{
+	color: #cc3727;
+}
+.error-alert{
+	color: #898989;
+	border: 1px solid #ff5050 !important;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+    font-size: 11px !important;
+    padding: 8px 3px 5px 30px !important;
+    width: 75%;
+    background-image: url("../images/error_icon.png");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: auto 15px;
+    margin-bottom: 10px;
+    white-space: normal;
+    text-align: left;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+.error-alert.animation-show{
+	visibility: visible;
+  	opacity: 1;
+}
+.toggle .track {
+	width: 42px !important;
+	height: 26px !important;
+}
+.toggle .handle {
+	width: 24px !important;
+    height: 24px !important;
+    top: 6px;
+    left: 6px;
+}
+.toggle input:checked+.track .handle {
+	background: #ffffff !important;
+}
+/********************
+* Sign Up
+********************/
+.add_photo{
+	width: 17vh;
+	height: 17vh;
+	max-height: 150px;
+	max-width: 150px;
+	min-height: 50px;
+	min-width: 50px;
+	margin-top: 8vh;
+	border-radius: 10vh;
+	-webkit-border-radius: 10vh;
+	border: 1px solid #c9c9c9;
+	background-color: #ffffff;
+	background-image: url("../images/photo_icon.png");
+	background-size: 50% 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+}
+.add_photo:active{
+	border: 1px solid #e4e4e4;
+}
+.signup-logo_wrapper{
+	position: relative;
+	width: 100%;
+	height: 25vh;
+}
+
+/************************
+* Left Side Menu
+************************/
+.clear{
+	float: none !important;
+	clear: both;
+	height: 1px;
+}
+
+.left-side-menu .profile-info{
+	background: #fc5154; /* Old browsers */
+	background: -moz-linear-gradient(top, #fc5154 2%, #f63e45 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fc5154 2%,#f63e45 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fc5154 2%,#f63e45 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc5154', endColorstr='#f63e45',GradientType=0 ); /* IE6-9 */
+
+	padding-top: 62px;
+	padding-left: 20px;
+	font-family: LatoRegular;
+}
+.left-side-menu .profile-info img.photo{
+	border-radius: 10vh;
+	-webkit-border-radius: 10vh;
+	width: 10vh;
+	height: 10vh;
+}
+.left-side-menu .profile-info .title{
+	margin-top: 13px;
+	font-size: 15px;
+	color: #ffffff;
+	font-family: LatoSemibold;
+}
+.left-side-menu .profile-info .desc{
+	font-size: 11px;
+	color: #ffffff;
+}
+.left-side-menu .profile-info .coin-info img{
+	width: 31px;
+	height: 31px;
+	float: left;
+}
+.left-side-menu .coin-info .value{
+	background-color: rgba(170, 31, 33, 1.0);
+	height: 30px;
+	border: 2px solid #f5a6a8;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 3px;
+	width: 80px;
+	text-align: center;
+}
+.left-side-menu .coin-info{
+	margin-top: 11px;
+}
+
+.left-side-menu .menu-link li{
+	background: url("../images/menu_arrow.png");
+	background-repeat: no-repeat;
+	background-size: 7px 12px;
+	background-position: right 20px center;
+	min-height: 30px;
+	height: 8vh;
+	padding: 2.5vh 4vh 2.5vh 25px;
+	border-bottom: 1px solid #c3c3c3;
+}
+.left-side-menu .menu-link li a{
+	font-size: 13px;
+	color: #636363;
+	font-family: LatoSemibold;
+	margin-left: 35px;
+	width: 150px;
+}
+.left-side-menu .menu-link li img{
+	height: 15px;
+	margin-top: 2px;
+	position: absolute;
+}
+
+/*****************************
+* In App Purchase
+*****************************/
+.coinshop .iap_wrappper{
+	width: 100%;
+	padding: 10px;
+}
+.coinshop .iap_wrappper li{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.coinshop .iap_wrappper li.buy-item:active{
+	background: #eeeeee;
+}
+.red-bg .coin-info img{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.red-bg .coin-info .value{
+	background-color: rgba(170, 31, 33, 1.0);
+	height: 30px;
+	border: 2px solid #f5a6a8;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 3px;
+	width: 80px;
+	text-align: center;
+}
+.coinshop .iap_wrappper li .row img{
+	width: 55px;
+}
+.coinshop .iap_wrappper li .row .title{
+	font-size: 15px;
+	color: #696969;
+	font-family: LatoBold;
+	margin-top: 6px;
+}
+.coinshop .iap_wrappper li .row .desc{
+	font-size: 10px;
+	color: #939393;
+	font-family: LatoMedium;
+	line-height: 12px;
+	margin-top: 5px; 
+}
+.coinshop .iap_wrappper li .row .price{
+	font-size: 19px;
+	color: #ff5050;
+	font-family: LatoBold;
+	text-align: right;
+	line-height: 55px;
+}
+
+/**********************
+* UI Alert
+**********************/
+div.popup{
+	background-color: rgba(255, 255, 255, 1.0);
+	border-top: 5px solid #ff4f51;
+	width: 75vw !important;
+	max-width: 320px;
+	min-width: 220px;
+}
+.popup-head{
+	border: 0px solid transparent !important;
+}
+.popup-title{
+	font-size: 16px !important;
+	color: #575757 !important;
+	text-transform: uppercase;
+}
+.popup-body{
+	color: #636363 !important;
+	text-align: center;
+	margin: 0px 10px !important;
+	padding: 5px !important;
+	border-bottom: 1px solid #a7a7a7;
+}
+div.popup-buttons{
+	margin: 5px 0px;
+}
+div.popup .button:first-child{
+	background-color: #ff4f51 !important;
+	border-color: #ff4f51 !important;
+	border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	color: #ffffff !important;
+}
+div.popup .popup-buttons .button:last-child{
+	background-color: #ffffff !important;
+	border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	color: #ff4f51 !important;
+	border: 1px solid #ff4f51 !important;
+}
+
+/**********************
+* Spot detail page1
+**********************/
+.height-100{
+	height: 90px !important;
+	background: #ffffff !important;
+	padding: 0px 30px 0px !important;
+	border-top: 1px solid #959595;
+	z-index: 1000;
+}
+ion-content.has-footer {
+	bottom: 90px;
+}
+.height-100 .avatar-img{
+	width: 60px; 
+	text-align: center; 
+	font-size: 14px; 
+	margin-left: 10px; 
+	margin-top: 15px; 
+	float: left;
+}
+.height-100 .avatar-img img{
+	width: 65px;
+	height: 65px;
+	border-radius: 65px;
+	-webkit-border-radius: 65px;
+	border: 3px solid #959595;
+}
+.height-100 .spot-name, .height-100 .route-name{
+	font-size: 18px; 
+	line-height: 30px; 
+	text-overflow: ellipsis; 
+	overflow: hidden;
+	font-family: LatoMedium;
+	color: #292b2b;
+}
+.height-100 .infor{
+	width: calc(100% - 70px); 
+	float: left; 
+	margin-top: 20px;
+}
+
+.height-100 .infor .infor-detail{
+	font-size: 15px; 
+	vertical-align: top;
+	padding-right: 5vw;	
+}
+@media (max-width: 320px) {
+	.height-100 .infor .infor-detail{
+		padding-right: 0px;	
+	}
+}
+.height-100 .infor .infor-detail div.col{
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 15px;
+	color: #959797;
+	font-size: 15px;
+	overflow: hidden;	
+}
+
+/***********************
+* Spot detail page2
+***********************/
+.marker-img{
+	position: relative;
+	width: 100vw;
+	height: 75vw;
+	background-position: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.marker-img.no-image{
+	background-image: url('../images/no_image.png') !important;
+	background-size: auto 50%;
+}
+.marker-img .load-icon{
+	display: none;
+	margin: auto;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  font-size: 40px;
+}
+.marker-img.loading .load-icon{
+	display: block !important;  
+}
+.marker-img.no-image img, .marker-img.loading img{
+	display: none;
+}
+.marker-img img{
+	width: 100%;
+	height: 100%;
+}
+.spot-infor{
+	height: 90px !important;
+	background: #ffffff !important;
+	padding: 0px 30px 0px !important;
+	border-top: 1px solid #959595;
+	border-bottom: 1px solid #959595;
+	z-index: 1000;
+}
+.spot-infor .avatar-img{
+	width: 60px; 
+	text-align: center; 
+	font-size: 14px; 
+	margin-left: 10px; 
+	margin-top: 15px; 
+	float: left;
+}
+.spot-infor .avatar-img img{
+	width: 65px;
+	height: 65px;
+	border-radius: 65px;
+	-webkit-border-radius: 65px;
+	border: 3px solid #959595;
+}
+.spot-infor .spot-name, .spot-infor .route-name{
+	font-size: 18px; 
+	line-height: 30px; 
+	text-overflow: ellipsis; 
+	overflow: hidden;
+	font-family: LatoMedium;
+	color: #292b2b;
+}
+.spot-infor .infor{
+	width: calc(100% - 70px); 
+	float: left; 
+	margin-top: 20px;
+}
+
+.spot-infor .infor .infor-detail{
+	font-size: 15px; 
+	vertical-align: top;
+	padding-right: 5vw;	
+}
+
+@media (max-width: 320px) {
+	.spot-infor .infor .infor-detail{
+		padding-right: 0px;	
+	}
+}
+
+.spot-infor .infor .infor-detail div.col{
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 15px;
+	color: #959797;
+	font-size: 15px;	
+}
+.spot-infor .list{
+	margin-bottom: 0px;
+}
+.spot-details .desc-btns{
+	background: #f7f7f7;
+	padding: 20px 30px 10px !important;
+	border-bottom: 1px solid #959595 !important;
+	z-index: 1000;
+	width: 100vw;
+}
+.spot-details .desc-btns p{
+	font-size: 13px;
+	color: #959797;
+	font-family: LatoMedium;
+}
+.spot-details .desc-btns button{
+	background: transparent;
+	border: 1px solid #ff5050;
+	color: #ff5050;
+	width: 40vw;
+	font-size: 13px;
+	font-family: LatoMedium;
+	padding: 0px !important;
+	height: 40px !important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.spot-details .desc-btns button:active{
+	color: #959797;
+	border: 1px solid #959797;
+}
+
+ion-content.spot-details{
+	bottom: 60px !important;
+}
+.spot-details #map.half-height{
+	height: 50% !important;
+}
+.spot-details-footer{
+	background: #3d5064;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	padding: 10px 20px;
+}
+.spot-details-footer .first{
+	background: #314356;
+	color: #ffffff;
+	font-size: 15px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	width: 100%;
+	text-align: center;
+	font-family: LatoMedium;
+	border: 0px solid;
+}
+.spot-details-footer .first:active{
+	color: #959797;
+	background: #293949;
+}
+
+textarea{
+	background: #fff !important;
+	border: 1px solid #ccc !important;
+	margin-bottom: 5px;
+}
+
+.coin-icon{
+	background: url("../images/coin_icon1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -38px;
+	margin-top: 3px
+}
+/********************
+* Forgot password
+*********************/
+.forgot_desc{
+	padding: 20vh 10vw 0px;
+	font-size: 16px;
+	color: #292b2b;
+}
+
+/********************
+* Add spot page
+*********************/
+
+.addscene-page .list{
+	width: 85%;
+	margin-left: 7.5%;
+	margin-top: 30px;
+}
+.addscene-page .list label.item{
+	background-color: transparent !important;
+	border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 1px solid #363636;
+}
+.addscene-page .list label.item .input-label{
+	font-size: 14px !important;
+}
+.addscene-page .list textarea{
+	border: 0px !important;
+	font-size: 14px;
+	background-color: transparent !important;
+	width: 64% !important;
+}
+
+.addscene-page .list .button-red-cus{
+	width: 100% !important;
+}
+
+.addscene-page .error-alert{
+	width: 100%;
+}
+
+/********************
+* Android keyboard scroll
+*********************/
+.overflow-scroll.isOverScroll .scroll{
+	height: 150% !important;
+}
+
+/********************
+* For Me Map Marker
+*********************/
+.gmnoprint, .gmnoprint img{
+	pointer-events: none;
+}
+/********************
+* For slider pager if(counter > 1) show.
+*********************/
+.slider.hide-pager-slider .slider-pager{
+	display: none;
+}
+/********************
+* For preload page
+*********************/
+.preload .load-msg{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10vh;
+	padding: 0px 5vw;
+}
+.preload .wel-logo-wrapper .logo{
+	height: 39vh;
+  margin: 21vh auto auto !important;
+}

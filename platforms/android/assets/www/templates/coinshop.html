@@ -1,0 +1,72 @@
+<ion-view title="GetCoin" class="gray-bg">
+	<ion-header-bar class="red-bg">
+		<div class="buttons">
+            <button class="button back-btn" ng-click="toBack()"></button>
+        </div>
+        <h1 class="title">Get Coin</h1>
+        <div class="buttons">
+        	<div class="coin-info">
+				<img src="images/coin_icon1.png">
+				<div class="value">{{user.Coins}}</div>
+				<br class="clear">
+			</div>
+        </div>
+	</ion-header-bar>
+
+	<ion-content class="has-header coinshop" scroll="true">
+		<ul class="list iap_wrappper" ng-show="products">
+			<li class="buy-item" ng-click="buyGoldenMember()" ng-show="checkMembership()">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_monthly.png"></div>
+					<div class="col-50">
+						<div class="title">{{products[0].title}}</div>
+						<div class="desc">{{products[0].description}}</div>
+					</div>
+					<div class="col-25 price">{{products[0].price}}</div>
+				</div>				
+			</li>
+
+			<li ng-show="!checkMembership()">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_monthly.png"></div>
+					<div class="col-75">
+						<div class="title">Your membership was already upgraded.</div>
+					</div>
+				</div>				
+			</li>
+
+			<li class="buy-item" ng-click="buyCoins('coins20')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_20.png"></div>
+					<div class="col-50">
+						<div class="title">{{products[1].title}}</div>
+						<div class="desc">{{products[1].description}}</div>
+					</div>
+					<div class="col-25 price">{{products[1].price}}</div>
+				</div>				
+			</li>
+
+			<li class="buy-item" ng-click="buyCoins('coin50')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_50.png"></div>
+					<div class="col-50">
+						<div class="title">{{products[2].title}}</div>
+						<div class="desc">{{products[2].description}}</div>
+					</div>
+					<div class="col-25 price">{{products[2].price}}</div>
+				</div>
+			</li>
+
+			<li class="buy-item" ng-click="buyCoins('coin80')">
+				<div class="row">
+					<div class="col-25"><img src="images/iap_80.png"></div>
+					<div class="col-50">
+						<div class="title">{{products[3].title}}</div>
+						<div class="desc">{{products[3].description}}</div>
+					</div>
+					<div class="col-25 price">{{products[3].price}}</div>
+				</div>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>

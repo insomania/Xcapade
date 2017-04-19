@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Xcapade\Capade_new\platforms\android\com.phonegap.plugins.facebookconnect\capade-FacebookLib\assets"/><source path="C:\Xcapade\Capade_new\platforms\android\com.phonegap.plugins.facebookconnect\capade-FacebookLib\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="C:\Xcapade\Capade_new\platforms\android\com.phonegap.plugins.facebookconnect\capade-FacebookLib\src\release\assets"/></dataSet></merger>
