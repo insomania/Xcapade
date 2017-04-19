@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    
+    <string name="app_prefs_label" translatable="false">capaug_prefs</string>
+    <string name="app_prefs_language" translatable="false">app_lang</string>
+    <string name="aws_s3_bucket" translatable="false">xcapade-v1</string>
+</resources>

@@ -1,0 +1,3 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="site_not_available">Content is not available. Please check your network connectivity.</string>
+</resources>

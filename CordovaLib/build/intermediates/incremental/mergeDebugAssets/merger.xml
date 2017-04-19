@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="H:\XcapadeFullSource\Capade_new\platforms\Xcapade\CordovaLib\assets"/><source path="H:\XcapadeFullSource\Capade_new\platforms\Xcapade\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="H:\XcapadeFullSource\Capade_new\platforms\Xcapade\CordovaLib\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,169 @@
+.ng-modal{
+	transition: 0.6s;
+}
+.ng-modal-overlay {
+	/* A dark translucent div that covers the whole screen */
+	position:absolute !important;
+	z-index:9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity: 0.4;
+}
+.ng-modal-dialog {
+	width: 100% !important;
+	position: absolute;
+	z-index: 10000;
+	bottom: -100vh;
+	height: 65vh;
+	font-family: LatoRegular !important;
+
+	transition: bottom ease-in-out 0.5s;
+	-webkit-transition:bottom ease-in-out 0.5s;
+	transition-delay: 1s;
+}
+.ng-modal-dialog.updown-slider-animation{
+	bottom: 0vh;
+	transition-delay: 0s !important;
+}
+.ng-hide .ng-modal-dialog.updown-slider-animation{
+	bottom: -100vh;
+}
+.ng-modal.ng-hide-add, .ng-modal.ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
+.ng-modal.ng-hide-remove .updown-slider-animation {
+  	bottom: -100vh;
+}
+
+.ng-modal-dialog-content {
+	width: 100%;
+	height: 100%;
+}
+
+.ng-modal-dialog-content .content {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.content .avatar-photo-wrapper{
+	background-color: #ffffff;
+	height: 14vh;
+	border-bottom: 1px solid #d0d0d0;
+	border-top: 1px solid #d0d0d0;
+}
+.content  .avatar-photo-wrapper .userphoto{
+	width: 15vh;
+	height: 15vh;
+	border-radius: 15vh;
+	-webkit-border-radius: 15vh;
+	background-color: #ffffff;
+	border: 1px solid #d0d0d0;
+	padding: 5px;
+	top: -7.5vh;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+.content .avatar-photo-wrapper .userphoto img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.content .avatar-photo-wrapper .username{
+	color: #2c2c2c;
+	font-size: 14px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 9vh;
+	text-align: center;
+	font-weight: 500;
+}
+.main-content{
+	height: 47vh;
+	background-color: #f7f7f7;
+}
+.ng-modal-close{
+	display: none;
+}
+.slider-dialog .found-info{
+	margin: 0px;
+}
+.slider-dialog .found-info div{
+	padding: 5px;
+	margin: 5px 0px;
+	text-align: center;
+	color: #565f73;
+	font-size: 11px;
+	text-transform: capitalize;
+}
+.slider-dialog .found-info div:first-child{
+	border-right: 1px solid #949494;
+}
+.custom-foundspots, .custom-foundroutes{
+	position: absolute;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	margin-left: -22px;
+	margin-top: 1px;
+}
+.custom-foundspots{
+	background-image: url("../images/spots_found_icon.png");
+}
+.custom-foundroutes{
+	background-image: url("../images/routes_found_icon.png");
+}
+.slider-dialog .ui-taps-wrapper{
+	color: #ffffff;
+	font-size: 15px;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.slider-dialog .ui-taps-wrapper div{
+	padding: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	background-color: #2a2a2a;
+	transition: background-color 0.5s ease-in-out;
+}
+.slider-dialog .ui-taps-wrapper div.selected{
+	background-color: #ff5050;
+}
+.friends-list div.list{
+	height: calc(65vh - 14vh - 125px) !important;
+	overflow-y: scroll;
+	padding: 0px 15px
+}
+.slider-dialog .friends-list a.item{
+	border: 0px;
+	background: #f7f7f7;
+}
+.slider-dialog .friends-list ion-item.item{
+	padding: 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+.slider-dialog .friends-list h2{
+	color: #2c2c2c;
+}
+.slider-dialog .friends-list p{
+	color: #949494;
+}
+.slider-dialog .friends-list img{
+	border-radius: 50% !important;
+	-webkit-border-radius: 50% !important;
+}
+

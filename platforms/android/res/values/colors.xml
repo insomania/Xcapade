@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#fb000000</color>
+    <color name="dark">#ff3c1509</color>
+    <color name="custom_red">#cf2e2e</color>
+    <color name="custom_white">#FFf7f7f7</color>
+    <color name="custom_dark">#231f20</color>
+    <color name="custom_pink">#f16860</color>
+</resources>

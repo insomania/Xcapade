@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/webviewnav.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/webviewnav.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/button_action_detail.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/button_action_detail.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/webview.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/webview.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/poiactivity.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/poiactivity.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/poidetaildialog.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/poidetaildialog.xml"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/res/merged/release/layout/html5container.xml",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/SDK/metaiohelper/build/intermediates/exploded-aar/android/metaioSDK/unspecified/res/layout/html5container.xml"
+    }
+]

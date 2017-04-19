@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/com_facebook_button_like_background_selected.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/com_facebook_button_like_background_selected.png"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/com_facebook_button_like_background.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/com_facebook_button_like_background.png"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/com_facebook_button_like_icon.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/com_facebook_button_like_icon.png"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/com_facebook_button_like_pressed.png",
+        "source": "/Volumes/DATA/team/Xcapade/app/Capade_new/platforms/android/com.phonegap.plugins.facebookconnect/capade-FacebookLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/com_facebook_button_like_pressed.png"
+    }
+]
